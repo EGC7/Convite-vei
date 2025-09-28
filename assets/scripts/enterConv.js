@@ -58,7 +58,7 @@ function createEnvelope() {
 function addPartyImgs(){
     for (let _=4; _<7; _++){
         const img = document.createElement("img");
-        img.src = `../images/party-img${_}.png`;
+        img.src = `./assets/images/party-img${_}.png`;
         img.classList.add("party-img");
         img.id = `party${_}`
         document.body.appendChild(img);
@@ -118,7 +118,7 @@ function vou(){
 
     
     const img = document.createElement("img");
-    img.src = "/assets/images/show.png";
+    img.src = "./assets/images/show.png";
     img.style.width = "200px";
     img.style.marginBottom = "15px";
     img.style.background = "transparent";
@@ -188,7 +188,7 @@ function Nvou(){
 
     
     const img = document.createElement("img");
-    img.src = "/assets/images/affVei.png";
+    img.src = "./assets/images/affVei.png";
     img.style.width = "200px";
     img.style.marginBottom = "15px";
     img.style.background = "transparent";
@@ -215,7 +215,7 @@ function Nvou(){
             img.style.transition = "opacity 1.2s ease-in-out";
             img.style.opacity = "0"; 
             setTimeout(() => {
-                img.src = "/assets/images/presente.png";
+                img.src = "./assets/images/presente.png";
                 img.style.opacity = "1";
                 text.innerText = "Mas aguardo o presente🙏";
                 setTimeout(() => {
@@ -248,7 +248,7 @@ function Nvou(){
 function newBodyFunction() {
     const link = document.querySelector("#link-CSS");
     document.body.removeChild(document.querySelector("audio"));
-    link.href = "../styles/newBody.css";
+    link.href = "./assets/styles/newBody.css";
     addPartyImgs();
     createEnvelope();
 }

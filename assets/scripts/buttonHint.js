@@ -27,7 +27,7 @@ hint.addEventListener("click", () => {
 
     
     const img = document.createElement("img");
-    img.src = "/assets/images/nerdEmoji.jpeg";
+    img.src = "./assets/images/nerdEmoji.jpeg";
     img.style.width = "200px";
     img.style.marginBottom = "15px";
 
@@ -95,7 +95,7 @@ pass.addEventListener("click", () => {
 
     
     const img = document.createElement("img");
-    img.src = "../images/pensante.png";
+    img.src = "./assets/images/pensante.png";
     img.style.width = "200px";
     img.style.marginBottom = "15px";
 
