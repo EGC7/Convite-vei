@@ -1,0 +1,206 @@
+@import url("/assets/styles/global.css");
+
+body {
+  background-color: #ddd;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#jumpScare{
+  width: 100%;
+}
+
+.party-img{
+  max-width: 200px;
+  position: absolute;
+  z-index: -1;
+}
+
+#party1{
+  left: 2%;
+  top: 3%;
+}
+
+#party2{
+  right: 10%;
+  top: 10%;
+  transform: rotateY(180deg);
+}
+
+#party3{
+  right: 10%;
+  top: 60%;
+}
+
+#balloons {
+  z-index: -1;
+  display: flex;
+  flex-flow: row nowrap;
+  bottom: 0;
+  position: absolute;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  & .balao {
+    object-fit: contain;
+    border: 0;
+    margin: -100px;
+    padding: 0;
+  }
+}
+
+#login {
+  background-color: rgba(0, 0, 0, .6);
+  display: flex;
+  flex-flow: column wrap;
+  width: 20%;
+  min-height: 30%;
+  padding: 15px;
+  border: 3px solid white;
+  border-radius: 13px;
+  transition: border-color 0.2s ease-out;
+  animation: borderColor 5s infinite;
+
+  gap: 15px;
+  align-items: center;
+  /* justify-content: center; */
+
+  & h1 {
+    font-size: 2rem;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  & input {
+    border: none;
+    width: 80%;
+    color: greenyellow;
+    font-size: 1rem;
+    font-family: "Courier New", Courier, monospace;
+    /* font-family: cursive; */
+    /* border-radius: 14px; */
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    transition: all 0.2s ease-out;
+    padding: 4px;
+  }
+
+  & input::placeholder {
+    color: white;
+  }
+
+  & input:focus {
+    outline: none;
+    border-bottom-color: lime;
+  }
+
+  & #passDiv {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & #showPass {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    margin-left: -5px;
+    margin-right: -40px;
+    background: url("/assets/icons/eye.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  & #continue {
+    padding: 3px 0px;
+    border-radius: 13px;
+    border: 1px solid black;
+    background-color: green;
+    transition: all 0.2s ease-out;
+    width: 90%;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    &:hover {
+      cursor: pointer;
+      color: black;
+      background-color: greenyellow;
+    }
+  }
+
+  & footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    & button {
+      cursor: pointer;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.8rem;
+      padding: 3px;
+      background-color: transparent;
+      color: lime;
+      transition: all 0.2s ease-out;
+      &:hover {
+        color: rgb(148, 253, 83);
+      }
+    }
+  }
+}
+
+@keyframes borderColor {
+  0% {
+    border-color: white;
+  }
+  25% {
+    border-color: rgb(0, 42, 255);
+  }
+  50% {
+    border-color: yellow;
+  }
+  75% {
+    border-color: rgb(0, 255, 179);
+  }
+  100% {
+    border-color: white;
+  }
+}
+
+@keyframes balloonUp {
+  from {
+    bottom: 0;
+  }
+
+  to {
+    bottom: 110%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #login {
+    width: 60%;
+  }
+  .party-img{
+    max-width: 25%;
+  }
+
+  #party1{
+    left: 2%;
+    top: 70%;
+  }
+  
+  #party2{
+    right: 10%;
+    top: 80%;
+    transform: rotateY(180deg);
+  }
+  
+  #party3{
+    right: 20%;
+    top: 10%;
+  }
+}

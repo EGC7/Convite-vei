@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGC Convite</title>
+    <link rel="shortcut icon" href="./assets/icons/favIcon.png" type="image/x-icon">
+    <link id="link-CSS" rel="stylesheet" href="./assets/styles/index.css">
+</head>
+<body>
+    <audio src="./assets/audio/YayEffect.mp3" preload="auto"></audio>
+    <section id="balloons"></section>
+
+    <!-- img[src=./assets/images/party-img$.jpeg].party-img#party$*3 -->
+    <img src="./assets/images/party-img1.png" alt="" class="party-img" id="party1">
+    <img src="./assets/images/party-img2.png" alt="" class="party-img" id="party2">
+    <img src="./assets/images/party-img3.png" alt="" class="party-img" id="party3">
+
+    <section id="login">
+        <h1>Login</h1>
+        <input type="text" autocomplete="off" name="login-name" id="login-name" placeholder="Nome Sobrenome" maxlength="20">
+        <div id="passDiv">
+            <input type="password" autocomplete="off" name="login-pass" id="login-pass" placeholder="Senha" max="15">
+            <button id="showPass"></button>
+        </div>
+        <button id="continue" type="button">Continuar</button>
+        <footer>
+            <button id="button-senha" type="button">
+                Que senha?
+            </button>
+            <button id="button-dica" type="button">
+                Quero dica
+            </button>
+        </footer>
+    </section>
+
+    <script type="module" src="/assets/scripts/createBallons.js"></script>
+    <script type="module" src="./assets/scripts/nameInput.js"></script>
+    <script type="module" src="./assets/scripts/passwordInput.js"></script>
+    <script type="module" src="./assets/scripts/buttonHint.js"></script>
+</body>
+</html>
