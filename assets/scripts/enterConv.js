@@ -91,6 +91,76 @@ function addPartyImgs(){
 
 // }
 
+function beforeInfos(){
+    const overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.backgroundColor = "rgba(0,0,0,0.6)";
+    overlay.style.display = "flex";
+    overlay.style.justifyContent = "center";
+    overlay.style.alignItems = "flex-start";
+    overlay.style.zIndex = "999";
+
+    
+    const popup = document.createElement("div");
+    popup.style.width = "350px";
+    popup.style.padding = "20px";
+    popup.style.background = "#fff";
+    popup.style.borderRadius = "12px";
+    popup.style.textAlign = "center";
+    popup.style.boxShadow = "0 4px 15px rgba(0,0,0,0.4)";
+    popup.style.transform = "translateY(-100%)"; 
+    popup.style.transition = "transform 0.5s ease";
+
+    
+    const img = document.createElement("img");
+    img.src = "./assets/images/nerdEmoji.jpeg";
+    img.style.width = "200px";
+    img.style.marginBottom = "15px";
+    img.style.background = "transparent";
+
+    const text = document.createElement("p");
+    text.innerText = "Eita eita, oiii. Tô te convidando pro meu aniversárioooooo🎉\n\nAs informações que eu achei mais importantes tão no envelope. Maaaas, se tiver algo que querias saber, pode me mandar mensagem perguntando mesmooo.";
+    text.style.margin = "10px 0";
+    text.style.fontSize = "18px";
+    text.style.fontWeight = "bold";
+
+    const okBtn = document.createElement("button");
+    okBtn.innerText = "Ok";
+    okBtn.style.padding = "10px 20px";
+    okBtn.style.background = "#007bff";
+    okBtn.style.color = "#fff";
+    okBtn.style.border = "none";
+    okBtn.style.borderRadius = "6px";
+    okBtn.style.cursor = "pointer";
+
+    
+    okBtn.addEventListener("click", () => {
+        setTimeout(() => {
+            popup.style.transform = "translateY(-370px)";
+            img.src = "./assets/images/drip.png";
+        }, 50);
+        setTimeout(() => {
+            document.body.removeChild(overlay);
+        }, 550);
+    });
+
+    
+    popup.appendChild(img);
+    popup.appendChild(text);
+    popup.appendChild(okBtn);
+    overlay.appendChild(popup);
+    document.body.appendChild(overlay);
+
+    
+    setTimeout(() => {
+        popup.style.transform = "translateY(100px)";
+    }, 50);
+}
+
 function vou(){
     
     const overlay = document.createElement("div");
@@ -247,6 +317,7 @@ function Nvou(){
 
 function newBodyFunction() {
     const link = document.querySelector("#link-CSS");
+    beforeInfos()
     document.body.removeChild(document.querySelector("audio"));
     link.href = "./assets/styles/newBody.css";
     addPartyImgs();
