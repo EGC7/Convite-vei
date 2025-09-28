@@ -9,7 +9,7 @@ for (let i=0; i<qtdBalloons; i++){
     const ballon = document.createElement("img");
     ballon.classList.add("balao");
     const r = Math.floor(Math.random() * 2)
-    ballon.src = `../images/${source[r]}.png`;
+    ballon.src = `./images/${source[r]}.png`;
     if (r == 0){
         ballon.style.width = "200px";
         ballon.style.height = "200px";
