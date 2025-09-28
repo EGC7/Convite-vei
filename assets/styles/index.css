@@ -1,4 +1,4 @@
-@import url("/assets/styles/global.css");
+@import url("./global.css");
 
 body {
   background-color: #ddd;
@@ -109,7 +109,7 @@ body {
     height: 45px;
     margin-left: -5px;
     margin-right: -40px;
-    background: url("/assets/icons/eye.png");
+    background: url("../icons/eye.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;

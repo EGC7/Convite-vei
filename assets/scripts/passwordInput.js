@@ -1,4 +1,5 @@
 import conv from "./convideidos.js";
+
 const passwords = []
 for (const mano in conv){
     passwords.push(conv[mano][1])

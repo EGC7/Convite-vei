@@ -9,7 +9,7 @@ for (let i=0; i<qtdBalloons; i++){
     const ballon = document.createElement("img");
     ballon.classList.add("balao");
     const r = Math.floor(Math.random() * 2)
-    ballon.src = `/assets/images/${source[r]}.png`;
+    ballon.src = `../images/${source[r]}.png`;
     if (r == 0){
         ballon.style.width = "200px";
         ballon.style.height = "200px";
@@ -48,10 +48,10 @@ function jumpScare(){
         songSource = "sherek";
     }
     
-    boasVindas.src = `./assets/images/${source}.png`;
+    boasVindas.src = `../images/${source}.png`;
     boasVindas.id = "jumpScare";
     document.body.appendChild(boasVindas);
-    document.querySelector("audio").setAttribute("src", `./assets/audio/${songSource}.mp3`);
+    document.querySelector("audio").setAttribute("src", `../audio/${songSource}.mp3`);
     document.querySelector("audio").currentTime = songTime;
     document.querySelector("audio").play();
 }

@@ -58,7 +58,7 @@ function createEnvelope() {
 function addPartyImgs(){
     for (let _=4; _<7; _++){
         const img = document.createElement("img");
-        img.src = `./assets/images/party-img${_}.png`;
+        img.src = `../images/party-img${_}.png`;
         img.classList.add("party-img");
         img.id = `party${_}`
         document.body.appendChild(img);
@@ -248,7 +248,7 @@ function Nvou(){
 function newBodyFunction() {
     const link = document.querySelector("#link-CSS");
     document.body.removeChild(document.querySelector("audio"));
-    link.href = "./assets/styles/newBody.css";
+    link.href = "../styles/newBody.css";
     addPartyImgs();
     createEnvelope();
 }

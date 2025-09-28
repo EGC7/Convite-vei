@@ -95,7 +95,7 @@ pass.addEventListener("click", () => {
 
     
     const img = document.createElement("img");
-    img.src = "/assets/images/pensante.png";
+    img.src = "../images/pensante.png";
     img.style.width = "200px";
     img.style.marginBottom = "15px";
 
