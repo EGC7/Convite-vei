@@ -89,7 +89,7 @@ function addSongToParty(){
         }, 200);
      }, 1200);
 
-// }
+}
 
 function beforeInfos(){
     const overlay = document.createElement("div");
