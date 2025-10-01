@@ -6,23 +6,32 @@ let inpV = nameInput.value.toString().toLowerCase()
 
 nameInput.addEventListener("input", () => {
     if (inpV === "na"){
-        nameInput.value = `Nathan Gomis`
-        nameInput.readOnly = true
+        nameInput.value = `Nathan Gomis`;
+        nameInput.readOnly = true;
     } else if (inpV === "marc"){
-        nameInput.value = `Marcus Ginicius`
-        nameInput.readOnly = true
+        nameInput.value = `Marcus Ginicius`;
+        nameInput.readOnly = true;
     } else if (inpV === "mari"){
-        nameInput.value = `Maria Clara`
-        nameInput.readOnly = true
+        nameInput.value = `Maria Clara`;
+        nameInput.readOnly = true;
     } else if (inpV === "ga"){
-        nameInput.value = `Gabs Doide`
-        nameInput.readOnly = true
+        nameInput.value = `Gabs Doide`;
+        nameInput.readOnly = true;
     } else if (inpV === "pa"){
-        nameInput.value = `Paula Vei`
-        nameInput.readOnly = true
+        nameInput.value = `Paula Vei`;
+        nameInput.readOnly = true;
     } else if (inpV === "jo"){
-        nameInput.value = `João Merdinha`
-        nameInput.readOnly = true
+        nameInput.value = `João Merdinha`;
+        nameInput.readOnly = true;
+    } else if (inpV === "an"){
+        nameInput.value = `Angelo Danto`;
+        nameInput.readOnly = true;
+    } else if (inpV === "cae"){
+        nameInput.value = `Caetano Caetano`;
+        nameInput.readOnly = true;
+    } else if (inpV === "may"){
+        nameInput.value = `Mayke Wedrel`;
+        nameInput.readOnly = true;
     }
     inpV = nameInput.value.toString().toLowerCase()
     if (nameInput.readOnly){

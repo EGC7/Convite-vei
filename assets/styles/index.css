@@ -33,6 +33,11 @@ body {
   top: 60%;
 }
 
+#partySong{
+  position: absolute;
+  max-width: 200px;
+}
+
 #balloons {
   z-index: -1;
   display: flex;
