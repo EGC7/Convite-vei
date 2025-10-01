@@ -5,9 +5,9 @@ const conv = {
     Paula: ["Vei", "aff vei tipo"],
     Marcus: ["Ginicius", "paupaupau"],
     Nathan: ["Gomis", "123567894"],
-    Angelo: ["Danto", ""],
+    Angelo: ["Danto", "SenhaVei"],
     Mayke: ["Wedrel", "Oi Mayke"],
-    Caetano: ["Caetano", "Senha"]
+    Caetano: ["Caetano", "Eu Sabo"]
 }
 
 export default conv;
