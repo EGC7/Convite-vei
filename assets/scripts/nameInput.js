@@ -32,6 +32,9 @@ nameInput.addEventListener("input", () => {
     } else if (inpV === "may"){
         nameInput.value = `Mayke Wedrel`;
         nameInput.readOnly = true;
+    } else if (inpV == "pye"){
+        nameInput.value = 'Pyetro Martins';
+        nameInput.readOnly = true;
     }
     inpV = nameInput.value.toString().toLowerCase()
     if (nameInput.readOnly){
