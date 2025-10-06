@@ -8,7 +8,8 @@ const conv = {
     Angelo: ["Danto", "SenhaVei"],
     Mayke: ["Wedrel", "Oi Mayke"],
     Caetano: ["Caetano", "Eu Sabo"],
-    Pyetro: ["Martins", "O Pitro"]
+    Pyetro: ["Martins", "O Pitro"],
+    Gabriel: ["Crossfit de Vento", "Meu Jovem"]
 }
 
 export default conv;
