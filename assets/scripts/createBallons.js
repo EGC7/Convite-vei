@@ -62,6 +62,8 @@ function jumpScare(){
         source = "party-img3";
         // songTime = 1;
         // songSource = "YayEffect";
+    } else if (user == "Gabriel"){
+        source = "kksherek";
     }
     
     boasVindas.src = `./assets/images/${source}.png`;
