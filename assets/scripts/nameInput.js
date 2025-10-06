@@ -14,7 +14,7 @@ nameInput.addEventListener("input", () => {
     } else if (inpV === "mari"){
         nameInput.value = `Maria Clara`;
         nameInput.readOnly = true;
-    } else if (inpV === "ga"){
+    } else if (inpV === "gabrielle"){
         nameInput.value = `Gabs Doide`;
         nameInput.readOnly = true;
     } else if (inpV === "pa"){
@@ -35,8 +35,8 @@ nameInput.addEventListener("input", () => {
     } else if (inpV == "pye"){
         nameInput.value = 'Pyetro Martins';
         nameInput.readOnly = true;
-    } else if (inpV == "gab"){
-        nameInput.value = 'Gabriel Crossfit de Vento';
+    } else if (inpV == "mont"){
+        nameInput.value = 'Monteiro, o Crossfit de Vento';
         nameInput.readOnly = true;
     }
     inpV = nameInput.value.toString().toLowerCase()
