@@ -36,7 +36,7 @@ nameInput.addEventListener("input", () => {
         nameInput.value = 'Pyetro Martins';
         nameInput.readOnly = true;
     } else if (inpV == "mont"){
-        nameInput.value = 'Monteiro, o Crossfit de Vento';
+        nameInput.value = 'Monteiro Crossfiteiro';
         nameInput.readOnly = true;
     }
     inpV = nameInput.value.toString().toLowerCase()
