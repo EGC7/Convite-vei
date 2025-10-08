@@ -70,6 +70,18 @@ function jumpScare(){
         source = "party-img2";
         // songTime = 1;
         // songSource = "YayEffect";
+    } else if (user == "Italo"){
+        source = "party-img3";
+        // songTime = 1;
+        // songSource = "YayEffect";
+    } else if (user == "Davi"){
+        source = "show";
+        // songTime = 1;
+        // songSource = "YayEffect";
+    } else if (user == "Alves"){
+        source = "party-img1";
+        // songTime = 1;
+        // songSource = "YayEffect";
     }
     
     boasVindas.src = `./assets/images/${source}.png`;

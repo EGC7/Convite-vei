@@ -41,6 +41,15 @@ nameInput.addEventListener("input", () => {
     } else if (inpV == "sof"){
         nameInput.value = 'Sofiaa Duarteee';
         nameInput.readOnly = true;
+    } else if (inpV == "dav"){
+        nameInput.value = 'Davi Duarteeeee';
+        nameInput.readOnly = true;
+    } else if (inpV == "alv"){
+        nameInput.value = 'Alves David';
+        nameInput.readOnly = true;
+    } else if (inpV == "ita"){
+        nameInput.value = 'Italo Sadia';
+        nameInput.readOnly = true;
     }
     inpV = nameInput.value.toString().toLowerCase()
     if (nameInput.readOnly){
