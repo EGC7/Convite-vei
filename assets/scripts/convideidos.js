@@ -10,7 +10,7 @@ const conv = {
     Caetano: ["Caetano", "Eu Sabo"],
     Pyetro: ["Martins", "O Pitro"],
     Monteiro: ["Crossfiteiro", "Meu Jovem"],
-    Sofiaa: ["Duartee", "Patinhaaa"]
+    Sofiaa: ["Duarteee", "Patinhaaa"]
 }
 
 export default conv;
