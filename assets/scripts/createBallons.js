@@ -66,7 +66,7 @@ function jumpScare(){
         source = "kksherek";
         // songTime = 1;
         // songSource = "YayEffect";
-    } else if (user == "Sofiaaa"){
+    } else if (user == "Sofiaa"){
         source = "party-img2";
         // songTime = 1;
         // songSource = "YayEffect";
